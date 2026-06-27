@@ -49,7 +49,7 @@ This project was developed for educational purposes as part of BSCS journey. Thi
 
 ## Preview
 
-![Homepage] <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/088e655f-39ab-4b52-8834-0466def508f9" />
+<b>[Homepage]</b> <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/088e655f-39ab-4b52-8834-0466def508f9" />
 
 
 
@@ -57,9 +57,9 @@ This project was developed for educational purposes as part of BSCS journey. Thi
 ## Screenshots
 
 ### Rooms
-![Rooms] <img width="1275" height="671" alt="Screenshot 2026-06-27 130544" src="https://github.com/user-attachments/assets/4562916e-621f-479a-b8d5-b5747c22e2f3" />
+<img width="1275" height="671" alt="Screenshot 2026-06-27 130544" src="https://github.com/user-attachments/assets/4562916e-621f-479a-b8d5-b5747c22e2f3" />
 
 
 ### Booking Form
-![Booking] <img width="1279" height="675" alt="Screenshot 2026-06-27 131021" src="https://github.com/user-attachments/assets/ccea0930-9ef5-4fe6-aded-4f6a5b9c6f2b" />
+<img width="1279" height="675" alt="Screenshot 2026-06-27 131021" src="https://github.com/user-attachments/assets/ccea0930-9ef5-4fe6-aded-4f6a5b9c6f2b" />
 
