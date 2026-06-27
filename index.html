@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luzoy Beach Resort Booking Website</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <canvas id="sparkleCanvas"></canvas>
+
+<div class="floating-circle f1"></div>
+<div class="floating-circle f2"></div>
+
+<header>
+    <nav>
+        <h2 class="logo">Luzoy <span>Resort</span></h2>
+        <ul class="nav-links">
+    <li><a href="#home" class="nav-btn"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#rooms" class="nav-btn"><i class="fas fa-bed"></i> Rooms</a></li>
+    <li><a href="#rates" class="nav-btn"><i class="fas fa-tags"></i> Rates</a></li>
+    <li><a href="#booking" class="nav-btn"><i class="fas fa-calendar-check"></i> Booking</a></li>
+    <li><a href="#gallery" class="nav-btn"><i class="fas fa-image"></i> Gallery</a></li>
+    <li><a href="#about" class="nav-btn"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="#contact" class="nav-btn"><i class="fas fa-phone"></i> Contact</a></li>
+</ul>
+
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Relax. Enjoy. Unwind.</h1>
+        <p>Come relax by the sea at Luzoy Beach Resort</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section id="rooms">
+    <h2 class="section-title">Rooms & Cottages</h2>
+
+<div class="room-container">
+  <div class="room-card" onclick="openGallery('cottage')">
+    <img src="images/cottage_display.jpg" alt="Cottage">
+    <h3>Cottage</h3>
+    <p>Perfect for day tours with family & friends!</p>
+  </div>
+
+  <div class="room-card" onclick="openGallery('openhut')">
+    <img src="images/hut_display.jpg" alt="Open Hut">
+    <h3>Open Hut</h3>
+    <p>Relax in our open-air hut with a beautiful beach view!</p>
+  </div>
+
+  <div class="room-card" onclick="openGallery('aircon')">
+    <img src="images/ac_room_1_2_3.jpg" alt="Air-conditioned Room">
+    <h3>Air-conditioned Room</h3>
+    <p>Enjoy a comfy overnight stay with everything you need!</p>
+  </div>
+</div>
+
+<div class="modal" id="galleryModal">
+    <div class="modal-box">
+        <span class="close-btn" onclick="closeGallery()">×</span>
+        <h2 id="galleryTitle"></h2>
+        <div id="galleryImages" class="gallery-thumbnails"></div>
+    </div>
+</div>
+
+<div class="modal" id="fullImgModal">
+    <span class="close-btn" onclick="closeFull()">×</span>
+    <img id="fullPreview" class="full-img">
+</div>
+
+</section><br><br>
+
+<section id="rates">
+    <fieldset>
+    <h2 class="section-title">Rates & Amenities</h2>
+    <div class="rates-container">
+        <h3>🏖 Entrance Fee 🏖</h3>
+        <ul>
+            <li>Daytour: ₱100 per pax (6:00am - 6:00pm)</li>
+            <li>Overnight: ₱200 per pax (24hrs stay sa open cottage)</li>
+            <li>Kids below 7 yrs old: FREE</li>
+            <li>Open Cottage: ₱500 (good for 8-10 pax)</li>
+        </ul>
+
+        <h3>🏖 New Rooms 🏖</h3>
+        <ul>
+            <li>AC Room #101, 102, 103, 202, 203 - ₱10,000 (8-10 pax, private toilet)</li>
+            <li>AC Room #104 - ₱8,000 (6-8 pax, private toilet)</li>
+            <li>AC Room #201 - ₱14,000 (12-14 pax, private toilet)</li>
+        </ul>
+
+        <h3>🏖 Rooms and Kubo 🏖</h3>
+        <ul>
+            <li>AC Room #1, 2, 3 - ₱4,000 (common toilet, 4 pax)</li>
+            <li>AC Room #9 - ₱8,500 (6-8 pax, private toilet & kitchen)</li>
+            <li>AC Room #4, 5 - ₱8,000 (6-8 pax, private toilet)</li>
+            <li>AC Room #6, 7, 8 - ₱9,000 (8-10 pax, private toilet)</li>
+            <li>Tee Pee Hut - ₱2,500 (2-3 pax)</li>
+            <li>Nipa Hut #1, 2 - ₱3,500 (3-5 pax, double & single bed)</li>
+            <li>New Nipa Hut #3, 4 - ₱5,000 (6-8 pax, 2 queen size bed)</li>
+        </ul>
+
+        <h3>🏖 Amenities 🏖</h3>
+        <ul>
+            <li>Island Hopping: ₱2,500 (10-12 pax, includes entrance, fish feeding & snorkeling)</li>
+            <li>Kayak (2 pax): ₱300/hr</li>
+            <li>Videoke: ₱1,500 overnight / ₱1,000 daytour</li>
+            <li>Gas Stove: ₱400 (can cook outside the room)</li>
+            <li>Tent Pitching Fee: ₱300 per tent</li>
+        </ul>
+
+        <h3>Other Fees</h3>
+        <ul>
+            <li>Parking: ₱100 daytour / ₱200 overnight (4 wheels)</li>
+            <li>Motor: ₱50 daytour / ₱100 overnight</li>
+            <li>Ecological Fee: ₱20 per head</li>
+        </ul><br>
+
+        <p><strong>Note: Online booking via GCash po. Check-in anytime from morning to afternoon depending on room availability. For 24hrs stay, check-in must be morning/afternoon. Bring your own food as there is no restaurant.</strong></p>
+
+    </div>
+    </fieldset>
+</section>
+
+<div class="modal" id="modalBox">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <img id="modalImg">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+<section id="booking">
+    <h2 class="section-title">Book Your Stay</h2>
+
+    <form id="bookingForm" class="booking-form">
+        <label for="fname"><b>Full Name:</b></label>
+        <input type="text" id="fname" name="fname" placeholder="Type your full name" required>
+
+        <label for="address"><b>Address:</b></label>
+        <input type="text" id="address" name="address" placeholder="Type your address" required>
+
+        <label for="contact"><b>Contact Number:</b></label>
+        <input type="number" id="number" name="number" placeholder="Contact No." required>
+
+        <label for="date"><b>Date of Arrival:</b></label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time"><b>Check in time:</b></label>
+        <input type="time" id="time" name="time">
+
+        <label for="ctime"><b>Check out time:</b></label>
+        <input type="time" id="ctime" name="ctime">
+
+        <label for="pax"><b>Pax:</b></label>
+        <input type="number" id="number" name="number" placeholder="Number of Guests" required>
+
+        <label><b>Rooms/Cottages</b></label>
+
+        <select required>
+            <option value="" disabled selected>Select Room</option>
+            <option>AC Room #101 (8-10 pax)</option>
+            <option>AC Room #102 (8-10 pax)</option>
+            <option>AC Room #103 (8-10 pax)</option>
+            <option>AC Room #202 (8-10 pax)</option>
+            <option>AC Room #203 (8-10 pax)</option>
+            <option>AC Room #104 (6-8 pax)</option>
+            <option>AC Room #201 (12-14 pax)</option>
+            <option>AC Room #1 (4 pax)</option>
+            <option>AC Room #2 (4 pax)</option>
+            <option>AC Room #3 (4 pax)</option>
+            <option>AC Room #9 (6-8 pax)</option>
+            <option>AC Room #4 (6-8 pax)</option>
+            <option>AC Room #5 (6-8 pax)</option>
+            <option>AC Room #6 (8-10 pax)</option>
+            <option>AC Room #7 (8-10 pax)</option>
+            <option>AC Room #8 (8-10 pax)</option>
+            <option>Tee Pee Hut (2-3 pax)</option>
+            <option>Nipa Hut #1 (3-5 pax)</option>
+            <option>Nipa Hut #2 (3-5 pax)</option>
+            <option>New Nipa Hut #3 (6-8 pax)</option>
+            <option>New Nipa Hut #4 (6-8 pax)</option>
+        </select>
+
+        <select>
+            <option value="" disabled selected>Select Cottage (Optional)</option>
+            <option>Cottage (Good for 8–10 pax)</option>
+            <option>Open Hut</option>
+            <option>Beach Front Cottage</option>
+        </select>
+
+        <select>
+            <option value="" disabled selected>Tent Pitching? (Optional)</option>
+            <option>Yes - ₱300 per tent</option>
+            <option>No</option>
+        </select>
+
+        <select>
+            <option value="" disabled selected>Boat for Island Hopping (Optional)</option>
+            <option>Yes - ₱2,500</option>
+            <option>No</option>
+        </select>
+
+        <label><b>Downpayment:</b></label>
+        <input type="number" placeholder="(GCash)" required>
+
+        <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p id="successMessage"></p>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="images/luzoy_gallery1.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_gallery2.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_gallery3.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_resort.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_gallery4.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_gallery5.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        <img src="images/luzoy_gallery6.jpg" onclick="openModal('Gallery Image', this.src, '')">
+        
+    </div>
+</section>
+
+<fieldset>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>
+        Luzoy Beach Resort is a beachfront destination located in Locloc, Bauan, Batangas, known for its calm waters and relaxing atmosphere. The resort provides different accommodation options such as open huts, cottages, and air-conditioned rooms that are suitable for both day tours and overnight stays.
+The place is simple, peaceful, and ideal for families, friends, and groups who want to enjoy the beach without traveling far. Guests can swim, relax, and spend quality time together while appreciating the natural surroundings of the area.
+Our website was created to help visitors easily access information about the resort, including room details, rates, amenities, and contact numbers. It serves as an organized and convenient way for guests to check what the resort offers before their visit.
+    </p>
+</section>
+</fieldset>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>📍 Locloc, Bauan, Batangas</p>
+    <p>📞 0926-023-1200 / 0916-203-8624 / 0939-599-0041</p>
+    <p>📧 Email: luzoybeachresort@gmail.com
+
+<p>We are available daily for questions regarding room availability, rates, and bookings. Guests may also message us for directions or additional resort details. We are happy to assist you and look forward to welcoming you to Luzoy Beach Resort!</p>
+</section>
+
+<footer>
+    © 2025 Luzoy Beach Resort — All Rights Reserved.
+</footer>
+
+<script>
+const galleries = {
+  cottage: {
+    title: "Cottage Photos",
+    images: [
+      "images/cottage_1.jpg",
+      "images/family_room_6_7_8.jpg",
+      "images/family_room_9.jpg"
+    ]
+  },
+  openhut: {
+    title: "Open Hut Photos",
+    images: [ 
+      "images/kubo_terrace_1_2.jpg",
+      "images/kubo_terrace_3_4.jpg"
+    ]
+  },
+  aircon: {
+    title: "Air-conditioned Room Photos",
+    images: [
+      "images/ac_room_1_2_3.jpg",
+      "images/family_room_5.jpg",
+      "images/family_room_4.jpg",
+    ]
+  }
+};
+
+function openGallery(type) {
+  const modal = document.getElementById("galleryModal");
+  const title = document.getElementById("galleryTitle");
+  const box = document.getElementById("galleryImages");
+
+  modal.style.display = "flex";
+  title.innerText = galleries[type].title;
+
+  box.innerHTML = "";
+  galleries[type].images.forEach(img => {
+    const image = document.createElement("img");
+    image.src = img;
+    image.onclick = () => openFull(img);
+    box.appendChild(image);
+  });
+}
+
+function closeGallery() {
+  document.getElementById("galleryModal").style.display = "none";
+}
+
+function openFull(src) {
+  const modal = document.getElementById("fullImgModal");
+  const full = document.getElementById("fullPreview");
+
+  modal.style.display = "flex";
+  full.src = src;
+}
+
+function closeFull() {
+  document.getElementById("fullImgModal").style.display = "none";
+}
+
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+    e.preventDefault();
+    document.getElementById("successMessage").innerText="🎉 Booking submitted! We will contact you later.";
+    this.reset();
+    });
+
+</script>
+
+
+</body>
+</html>
