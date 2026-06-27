@@ -1,4 +1,6 @@
-<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/260a0838-54bb-4ed1-9053-39519ac3e6f6" /># Luzoy-Beach-Resort-Booking-Website
+<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/260a0838-54bb-4ed1-9053-39519ac3e6f6" />
+
+<b># Luzoy-Beach-Resort-Booking-Website</b>
 A booking website developed for Luzoy Beach Resort using HTML, CSS, and JavaScript. The website provides accommodation details, rates, amenities, photo galleries, and an online booking form for visitors.
 # 🌊 Luzoy Beach Resort Booking Website
 
@@ -54,10 +56,6 @@ This project was developed for educational purposes as part of a BSCS Web Develo
 
 
 ## Screenshots
-
-### Home Page
-![Home] <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/62c6dedd-14a7-4d4e-bfca-98c451457bd4" />
-
 
 ### Rooms
 ![Rooms] <img width="1275" height="671" alt="Screenshot 2026-06-27 130544" src="https://github.com/user-attachments/assets/4562916e-621f-479a-b8d5-b5747c22e2f3" />
