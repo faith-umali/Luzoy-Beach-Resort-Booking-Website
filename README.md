@@ -63,3 +63,6 @@ This project was developed for educational purposes as part of BSCS journey. Thi
 ### Booking Form
 <img width="1279" height="675" alt="Screenshot 2026-06-27 131021" src="https://github.com/user-attachments/assets/ccea0930-9ef5-4fe6-aded-4f6a5b9c6f2b" />
 
+
+//right now my live site here can't show some pictures if you view here, I will be back to improve that thing,just a lil busy studying cloud practitioner, I'm gonna take that exam and pass it. Thank you and God Bless You.
+
