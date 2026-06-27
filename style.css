@@ -1,0 +1,452 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, #e0f7ff, #c0f0ff);
+    overflow-x:hidden;
+    position:relative;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.floating-circle{
+    position:fixed;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(0,160,200,0.25);
+    filter:blur(30px);
+    animation:float 10s infinite alternate ease-in-out;
+    z-index:-5;
+}
+
+.f1{ top:5%; left:10%; animation-duration:12s; }
+.f2{ bottom:10%; right:5%; background:rgba(255,170,80,0.25); }
+
+@keyframes float{
+    0%{ transform:translateY(0px) translateX(0px); }
+    100%{ transform:translateY(40px) translateX(30px); }
+}
+
+
+header{
+    position:fixed;
+    width:100%;
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,0.3);
+    box-shadow:0 4px 25px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 60px;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:800;
+    color:#007a8c;
+    text-shadow:0 0 8px rgba(0,255,255,0.3);
+}
+
+.logo span{
+    color:#ffb657;
+}
+
+.nav-links li{
+    display:inline-block;
+    margin:0 15px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#03515e;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffb657;
+    text-shadow:0 0 10px rgba(255,200,100,0.7);
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("images/luzoy_resort.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero-content h1{
+    font-size:70px;
+    color:white;
+    font-weight:800;
+    animation:slideDown 1.5s ease-out;
+    text-shadow:0 0 25px rgba(0,255,255,0.4);
+}
+
+.hero-content p{
+    color:#e0ffff;
+    font-size:22px;
+    margin-top:10px;
+    animation:fadeIn 2.5s ease-out;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#0099a8,#00d4ff);
+    color:white;
+    font-weight:600;
+    box-shadow:0 0 15px rgba(0,200,255,0.6);
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px rgba(0,255,255,1);
+}
+
+@keyframes slideDown{
+    from{ transform:translateY(-60px); opacity:0; }
+    to{ transform:translateY(0); opacity:1;}
+}
+@keyframes fadeIn{
+    from{opacity:0;} to{opacity:1;}
+}
+
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin:70px 0 40px;
+    color:#007a8c;
+    text-shadow:0 0 10px #92f0ff;
+    font-weight:800;
+}
+
+
+.room-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:0 40px;
+}
+
+.room-card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+.room-card:hover{
+    transform:scale(1.07) rotateZ(-1deg);
+    box-shadow:0 10px 35px rgba(0,200,255,0.5);
+}
+
+.room-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.room-card:hover img{
+    transform:scale(1.05);
+}
+
+.modal{
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:10000;
+}
+
+.modal-content{
+    width:500px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.4);
+    animation:popIn 0.4s ease-out;
+    text-align:center;
+}
+
+.modal-content img{
+    width:100%;
+    border-radius:10px;
+}
+
+.modal-content h3{
+    margin-top:15px;
+    font-size:26px;
+}
+
+.modal-content p{
+    margin-top:10px;
+}
+
+.close-btn{
+    float:right;
+    cursor:pointer;
+    font-size:26px;
+    color:#ff6b6b;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.gallery-thumbnails img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.08);
+}
+
+.full-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+#fullImgModal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes popIn{
+    from{ transform:scale(0.7); opacity:0; }
+    to{ transform:scale(1); opacity:1; }
+}
+
+.booking-form{
+    width:70%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    background:rgba(255,255,255,0.85);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,200,255,0.4);
+}
+
+.booking-form input,
+.booking-form select{
+    padding:14px;
+    border-radius:12px;
+    border:2px solid #8ceeff;
+    background: rgba(255, 255, 255, 0.9);
+    width:100%;
+    color:#03515e;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus{
+    border-color:#00d4ff;
+    box-shadow:0 0 15px rgba(0,200,255,0.4);
+}
+
+.booking-form button{
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#0099a8,#00d4ff);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 0 15px rgba(0,200,255,0.6);
+    transition:0.3s;
+}
+
+.booking-form button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(0,255,255,1);
+}
+
+#booking label {
+    color: #03515e;
+    font-weight: 600;
+}
+
+.rates-container,
+.about,
+.contact {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    text-align: left;
+    color: #03515e;
+    line-height: 1.6;
+}
+
+.rates-container h3,
+.about h2,
+.contact h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #007a8c;
+}
+
+.rates-container ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.rates-container ul li {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.rates-container p,
+.about p,
+.contact p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 16px;
+    color: #03515e;
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+}
+
+#successMessage{
+    text-align:center;
+    margin-top:20px;
+    color:#008c96;
+    font-size:20px;
+    font-weight:700;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:0 40px 40px;
+}
+
+.gallery-grid img{
+    width:100%;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 25px rgba(0,200,255,0.5);
+}
+
+#sparkleCanvas{
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:2000;
+}
+
+#galleryModal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.gallery-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
