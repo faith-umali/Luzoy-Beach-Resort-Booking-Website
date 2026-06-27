@@ -1,8 +1,7 @@
 <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/260a0838-54bb-4ed1-9053-39519ac3e6f6" />
 
-<b># Luzoy-Beach-Resort-Booking-Website</b>
-A booking website developed for Luzoy Beach Resort using HTML, CSS, and JavaScript. The website provides accommodation details, rates, amenities, photo galleries, and an online booking form for visitors.
 # 🌊 Luzoy Beach Resort Booking Website
+A booking website developed for Luzoy Beach Resort using HTML, CSS, and JavaScript. The website provides accommodation details, rates, amenities, photo galleries, and an online booking form for visitors.
 
 ## Overview
 
