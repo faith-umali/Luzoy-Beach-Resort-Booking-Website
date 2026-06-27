@@ -45,7 +45,7 @@ As the team leader, I was primarily responsible for the website's overall design
 
 ## Disclaimer
 
-This project was developed for educational purposes as part of a BSCS Web Development course requirement.
+This project was developed for educational purposes as part of BSCS journey. This was created before we are going to defend our thesis .
 
 ## Preview
 
