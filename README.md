@@ -5,7 +5,7 @@ A booking website developed for Luzoy Beach Resort using HTML, CSS, and JavaScri
 
 ## Overview
 
-The Luzoy Beach Resort Booking Website is a front-end web development project created for our BSCS Web Development course. It was developed to provide visitors with an organized platform where they can view resort information, explore available accommodations, check rates and amenities, browse photo galleries, and submit booking requests.
+The Luzoy Beach Resort Booking Website is a front-end web development project created for our subject which is Application Developent. It was developed to provide visitors with an organized platform where they can view resort information, explore available accommodations, check rates and amenities, browse photo galleries, and submit booking requests.
 
 ## Features
 
