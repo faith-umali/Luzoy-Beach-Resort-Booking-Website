@@ -1,4 +1,4 @@
-<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/260a0838-54bb-4ed1-9053-39519ac3e6f6" /><img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/0fa222f2-d6a1-4697-8e3a-7eb35345b8f8" /># Luzoy-Beach-Resort-Booking-Website
+<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/260a0838-54bb-4ed1-9053-39519ac3e6f6" /># Luzoy-Beach-Resort-Booking-Website
 A booking website developed for Luzoy Beach Resort using HTML, CSS, and JavaScript. The website provides accommodation details, rates, amenities, photo galleries, and an online booking form for visitors.
 # 🌊 Luzoy Beach Resort Booking Website
 
@@ -48,21 +48,21 @@ This project was developed for educational purposes as part of a BSCS Web Develo
 
 ## Preview
 
-![Homepage](<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/088e655f-39ab-4b52-8834-0466def508f9" />
-)
+![Homepage] <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/088e655f-39ab-4b52-8834-0466def508f9" />
+
 
 
 
 ## Screenshots
 
 ### Home Page
-![Home](<img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/62c6dedd-14a7-4d4e-bfca-98c451457bd4" />
-)
+![Home] <img width="1277" height="666" alt="Screenshot 2026-06-27 125530" src="https://github.com/user-attachments/assets/62c6dedd-14a7-4d4e-bfca-98c451457bd4" />
+
 
 ### Rooms
-![Rooms](<img width="1275" height="671" alt="Screenshot 2026-06-27 130544" src="https://github.com/user-attachments/assets/4562916e-621f-479a-b8d5-b5747c22e2f3" />
-)
+![Rooms] <img width="1275" height="671" alt="Screenshot 2026-06-27 130544" src="https://github.com/user-attachments/assets/4562916e-621f-479a-b8d5-b5747c22e2f3" />
+
 
 ### Booking Form
-![Booking](<img width="1279" height="675" alt="Screenshot 2026-06-27 131021" src="https://github.com/user-attachments/assets/ccea0930-9ef5-4fe6-aded-4f6a5b9c6f2b" />
-)
+![Booking] <img width="1279" height="675" alt="Screenshot 2026-06-27 131021" src="https://github.com/user-attachments/assets/ccea0930-9ef5-4fe6-aded-4f6a5b9c6f2b" />
+
